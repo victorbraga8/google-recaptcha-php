@@ -7,13 +7,13 @@
 	<title>Google Recaptcha</title>		
 </head>
 <body>
-	<form action="php/contact.php" method="POST">
-		<input type="text" name="nome">
-		<input type="text" name="e-mail">
-		<input type="text" name="telefone">
-		<input type="text" name="mensagem">
-		<div class="g-recaptcha" data-sitekey="SUA_KEY"></div>
-		<input type="submit" value="Enviar">
-	</form>	
+		<form action="php/contact.php" method="POST">
+        		<input type="text" name="nome" required="Gostariamos de saber o seu nome" placeholder="Informe o seu nome">
+                <input type="text" name="e-mail" required="O seu e-mail é muito importante" placeholder="Informe o seu e-mail">
+                <input type="text" name="telefone" required="O seu telefone é muito importante" placeholder="Informe o seu telefone">
+                <textarea name="mensagem" class="message" required="Informe a sua mensagem" placeholder="Informe a sua mensagem"></textarea>
+				<div class="g-recaptcha" data-sitekey="SUA_KEY"></div>
+                <input type="submit" name="btnEnviar" class="btn btn-primary" value="Enviar">                		             
+        </form> 
 </body>
 </html>
